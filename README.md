@@ -286,12 +286,12 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Asset Type                    | Prefix     | Suffix     | Notes                            |
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
 | Material                      | M_         |            |                                  |
-| Material (Post Process)       | PP_        |            |                                  |
+| Material (Post Process)       | PPM_       |            |                                  |
 | Material Function             | MF_        |            |                                  |
 | Material Instance             | MI_        |            |                                  |
 | Material Parameter Collection | MPC_       |            |                                  |
-| Subsurface Profile            | SP_        |            |                                  |
-| Physical Materials            | PM_        |            |                                  |
+| Subsurface Profile            | SSP_       |            |                                  |
+| Physical Materials            | PHM_       |            |                                  |
 | Decal                         | M_, MI_    | _Decal     |                                  |
 
 <a name="anc-textures"></a>
@@ -301,16 +301,17 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| T_ | _D      |                                  |
+| Texture (Diffuse/Albedo/Base Color)| T_ | _BC     |                                  |
 | Texture (Normal)        | T_         | _N         |                                  |
-| Texture (Roughness)     | T_         | _R         |                                  |
-| Texture (Alpha/Opacity) | T_         | _A         |                                  |
-| Texture (Ambient Occlusion) | T_     | _O         |                                  |
-| Texture (Bump)          | T_         | _B         |                                  |
-| Texture (Emissive)      | T_         | _E         |                                  |
-| Texture (Mask)          | T_         | _M         |                                  |
-| Texture (Specular)      | T_         | _S         |                                  |
 | Texture (Metallic)      | T_         | _M         |                                  |
+| Texture (Roughness)     | T_         | _R         |                                  |
+| Texture (Alpha/Opacity/Mask) | T_    | _A         |                                  |
+| Texture (Ambient Occlusion) | T_     | _O         |                                  |
+| Texture (Height)        | T_         | _H         |                                  |
+| Texture (Emissive)      | T_         | _E         |                                  |
+| Texture (Specular)      | T_         | _S         |                                  |
+| Texture (Vector)        | T_         | _V         | Non-normal vector data           |
+| Texture (Data)          | T_         | _D         | Misc encoded data                |
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
@@ -373,7 +374,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| Physical Material       | PM_        |            |                                  |
+| Physical Material       | PHM_       |            |                                  |
 | Physical Asset	  | PHYS_      |            |                                  |
 | Destructible Mesh       | DM_        |            |                                  |
 
@@ -412,7 +413,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Particle System         | PS_        |            |                                  |
-| Material (Post Process) | PP_        |            |                                  |
+| Material (Post Process) | PPM_       |            |                                  |
 
 **[⬆ Back to Top](#table-of-contents)**
 
